@@ -272,7 +272,7 @@ function displayItems() {
 
 	for (let i = 0; i < player1.items.length; i++) {
 		let itemBtn = document.createElement('button');
-		itemBtn.innerHTML = `<img width="30" src="./static/${player1.items[i]}.png">`
+		itemBtn.innerHTML = `<img width="30" src="./${player1.items[i]}.png">`
 		itemBtn.onclick = () => {
 			useItem(i, 1);
 		}
@@ -282,7 +282,7 @@ function displayItems() {
 
 	for (let i = 0; i < player2.items.length; i++) {
 		let itemBtn = document.createElement('button');
-		itemBtn.innerHTML = `<img width="30" src="./static/${player2.items[i]}.png">`
+		itemBtn.innerHTML = `<img width="30" src="./${player2.items[i]}.png">`
 		itemBtn.onclick = () => {
 			useItem(i, 2);
 		}
